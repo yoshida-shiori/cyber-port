@@ -1,0 +1,282 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" manifest="../manifest/cacheManifest.appcache">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>調査票情報の一覧</title>
+<!--CSS-->
+<link href="stylesheet/common.css" rel="stylesheet" type="text/css">
+<link href="fonts/Noto_Sans_JP/NotoSansJP-Regular.otf" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--header-->
+    <header>
+            <div class="header-left-logo">
+                <img src="image/common/logo.png" alt="">
+            </div>
+            <div class="header-right-list">
+                <div class="image">
+                    <img src="image/common/icon_a.png" alt="">
+                    <img src="image/common/icon_bell.png" alt="">
+                </div>
+                <div class="name">
+                    <img src="image/common/icon_awesome-user-circle.png" alt="">
+                    <p>サイバー太郎</p>
+                </div>
+            </div>
+    </header>
+    <!--/header-->
+    <!--nav menu-->
+    <div class="top-nav">
+        <ul>
+            <li><a href="">TOP</a></li>
+            <li><a href="">一覧・編集</a></li>
+            <li><a href="">概要</a></li>
+            <li><a href="">FQR</a></li>
+            <li><a href="">お問い合わせ</a></li>
+        </ul>
+    </div>
+    <!--/nav menu-->
+    <div class="title">
+        <h1>調査票情報の一覧</h1>
+    </div>
+    <main>
+        <!--main manu-->
+        <div class="menu">
+            <!--main manu left-->
+            <div class="menu-left">
+                <!--港湾名セレクト-->
+                <div class="selection">
+                <lavel for="harbor-select">港湾</lavel>
+                    <select name="harbors">
+                        <option value="">港湾名</option>
+                        <option value="">--01--</option>
+                        <option value="">--02--</option>
+                        <option value="">--03--</option>
+                        <option value="">--04--</option>
+                    </select>
+                    </div>
+                <!--対象年月日 カレンダー-->
+                <div class="date-select">
+                <lavel for="date-select">対象年月日</lavel>
+                    <div class="date-selects">
+                        <input type="date" name="start" value="2022-02-21"> - <input type="date" name="end" value="2022-02-05">
+                    </div>
+                </div>
+                <!--表示ボタン-->
+                <button>表示</button>
+                <p>Total : <span>1,234</span>件</p>
+            </div>
+            <!--/main manu left-->
+            <!--main manu right-->
+            <div class="menu-right">
+                <ul>
+                    <li class="boder-right">
+                        <a href=""><img src="image/common/icon_awesome-pen.png" alt="">編集</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="image/common/icon_material-mode-comment.png" alt="">報告</a>
+                    </li>
+                </ul>
+                <div class="setting">
+                    <a href="">
+                        <img src="image/common/icon_gear.png" alt="">
+                        設定
+                    </a>
+                </div>
+            </div>
+            <!--main manu right-->
+        </div>
+        <!--/main manu-->
+        <!--main table-->
+        <table>
+            <thead>
+                <tr>
+                    <th class="space" colspan="2"></th>
+                    <th colspan="3">入稿情報</th>
+                    <th>船舶情報</th>
+                    <th>人員情報</th>
+                    <th>貸物情報</th>
+                    <th colspan="3">編集者</th>
+                </tr>
+                <tr>
+                    <th class="items-center specification01">処理<img src="image/common/icon_arrow_list.png"><span>99</span></th>
+                    <th class="specification02">No.</th>
+                    <th class="items-center">入港日<img src="image/common/icon_arrow_list.png"></th>
+                    <th>着岸時刻</th>
+                    <th class="items-center">場所<img src="image/common/icon_arrow_list.png"></th>
+                    <th class="items-center">船名<img src="image/common/icon_arrow_list.png"></th>
+                    <th>乗込人員</th>
+                    <th>貸物形態</th>
+                    <th class="items-center">編集者<img src="image/common/icon_arrow_list.png"></th>
+                    <th colspan="2">更新日時</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="image/common/icon_triangle_rd.png"></td>
+                    <td>01</td>
+                    <td>2022/2/1</td>
+                    <td>2022/2/1 10:00</td>
+                    <td>第三泊地</td>
+                    <td>第３日本丸</td>
+                    <td></td>
+                    <td></td>
+                    <td>山田太郎</td>
+                    <td>2022/2/8 15:10</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_oblong_gr.png"></td>
+                    <td>02</td>
+                    <td>2022/2/1</td>
+                    <td>2022/2/1 11:50</td>
+                    <td>第四埠頭</td>
+                    <td>クイーンコウワン号</td>
+                    <td>＊</td>
+                    <td></td>
+                    <td>鈴木一郎</td>
+                    <td>2022/2/8 14:50</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_line_gy.png"></td>
+                    <td>03</td>
+                    <td>2022/2/1</td>
+                    <td>2022/2/1 11:50</td>
+                    <td>第四埠頭</td>
+                    <td>クイーンコウワン号</td>
+                    <td></td>
+                    <td></td>
+                    <td>鈴木一郎</td>
+                    <td>2022/2/8 14:50</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_triangle_rd.png"></td>
+                    <td>04</td>
+                    <td>2022/2/1</td>
+                    <td>2022/2/1 11:50</td>
+                    <td>第四埠頭</td>
+                    <td>クイーンコウワン号</td>
+                    <td></td>
+                    <td>コンテナ・シャーシ</td>
+                    <td>鈴木一郎</td>
+                    <td>2022/2/8 14:50</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_line_gy.png"></td>
+                    <td>05</td>
+                    <td>2022/2/1</td>
+                    <td>2022/2/1 11:50</td>
+                    <td>第四埠頭</td>
+                    <td>クイーンコウワン号</td>
+                    <td></td>
+                    <td>コンテナ・シャーシ</td>
+                    <td>鈴木一郎</td>
+                    <td>2022/2/8 14:50</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_line_gy.png"></td>
+                    <td>06</td>
+                    <td>2022/2/1</td>
+                    <td>2022/2/1 12:00</td>
+                    <td>第八埠頭</td>
+                    <td>第８国土丸</td>
+                    <td>＊</td>
+                    <td></td>
+                    <td>佐藤哲也</td>
+                    <td>2022/2/9 18:20</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_oblong_gr.png"></td>
+                    <td>07</td>
+                    <td>2022/2/2</td>
+                    <td>2022/2/2 16:00</td>
+                    <td>第十埠頭</td>
+                    <td>かすみ７号</td>
+                    <td></td>
+                    <td>コンテナ</td>
+                    <td>斎藤恵子</td>
+                    <td>2022/2/7 11:25</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_line_gy.png"></td>
+                    <td>08</td>
+                    <td>2022/2/2</td>
+                    <td>2022/2/2 16:00</td>
+                    <td>第十埠頭</td>
+                    <td>かすみ７号</td>
+                    <td></td>
+                    <td>コンテナ</td>
+                    <td>斎藤恵子</td>
+                    <td>2022/2/7 11:25</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_triangle_rd.png"></td>
+                    <td>09</td>
+                    <td>2022/2/3</td>
+                    <td>2022/2/3 9:00</td>
+                    <td>第五岸壁</td>
+                    <td>サイバーポート丸</td>
+                    <td></td>
+                    <td>コンテナ</td>
+                    <td>鈴木一郎</td>
+                    <td>2022/2/6 14:50</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_oblong_gr.png"></td>
+                    <td>10</td>
+                    <td>2022/2/3</td>
+                    <td>2022/2/3 9:00</td>
+                    <td>第五岸壁</td>
+                    <td>サイバーポート丸</td>
+                    <td></td>
+                    <td>コンテナ</td>
+                    <td>鈴木一郎</td>
+                    <td>2022/2/6 14:50</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_line_gy.png"></td>
+                    <td>11</td>
+                    <td>2022/2/3</td>
+                    <td>2022/2/3 9:00</td>
+                    <td>第五岸壁</td>
+                    <td>サイバーポート丸</td>
+                    <td></td>
+                    <td>コンテナ</td>
+                    <td>鈴木一郎</td>
+                    <td>2022/2/6 14:50</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+                <tr>
+                    <td><img src="image/common/icon_triangle_rd.png"></td>
+                    <td>12</td>
+                    <td>2022/2/5</td>
+                    <td>2022/2/5 13:00</td>
+                    <td>第一埠頭</td>
+                    <td>第３日本丸</td>
+                    <td></td>
+                    <td>その他</td>
+                    <td>山田太郎</td>
+                    <td>2022/2/8 15:10</td>
+                    <td><botton>詳細</botton></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--/main table-->
+    </main>
+    <!--/main table-->
+    <!--footer-->
+    <footer></footer>
+    <!--/footer-->
+</body>
+</html>

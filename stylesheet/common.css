@@ -1,0 +1,253 @@
+@charset "utf-8";
+@font-face {
+   font-family: "NotoSansJP";
+   src: url("fonts/Noto_Sans_JP/NotoSansJP-Bold.otf"),
+       url("fonts/Noto_Sans_JP/NotoSansJP-Regular.otf");
+}
+body {
+    margin: 0;
+    font-family: "NotoSansJP";
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 5px 3%;
+}
+.header-left-logo {
+    height: 40px;
+}
+.header-left-logo img {
+    width: 100%;
+}
+.header-right-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+.image {
+    margin: 5px 15px;
+}
+.image img {
+    padding: 0 2px;
+}
+.name {
+    display: flex;
+    align-items: center;
+}
+.name p {
+    color: #707070;
+    font-size: 15px;
+}
+/* /header */
+/* nav menu */
+.top-nav {
+    background-color: #34B1AE;
+}
+.top-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    list-style: none;
+}
+.top-nav li {
+    width: 120px;
+    text-align: center;
+    font-size: 15px;
+}
+.top-nav li a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+.top-nav li a:visited {
+    background-color: #25918F;
+}
+.top-nav li:hover{
+    background-color: #25918F;
+}
+/* /nav menu */
+/* main */
+main {
+    padding: 15px 4%;
+    background-color: #F5F5F5;
+}
+/* title */
+.title h1 {
+    margin: 5px 0;
+    padding-left: 4%;
+    font-weight: 100;
+    font-size: 20px;
+}
+/* menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+/* main manu left */
+.menu-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 56%;
+}
+.selection lavel {
+    display: block;
+    color: #707070;
+    font-size: 12px;
+}
+.selection select {
+    display: block;
+    width: 250px;
+    margin: 5px 0;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: #999999;
+    font-size: 14px;
+    cursor: pointer;
+}
+.date-select lavel {
+    display: block;
+    color: #707070;
+    font-size: 12px;
+}
+.date-selects {
+    display: block;
+    color: #707070;
+}
+.date-selects input {
+    width: 120px;
+    margin: 5px 0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #999999;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu-left button {
+    width: 80px;
+    height: 30px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #34B1AE;
+    color: #fff;
+    cursor: pointer;
+}
+.menu-left p {
+    margin: 5px 0;
+    color: #707070;
+    font-weight: 700;
+    font-size: 12px;
+}
+.menu-left span {
+    margin: 5px 0;
+    color: #25A09D;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* /main manu left */
+/* main manu right */
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 38%;
+}
+.menu-right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 180px;
+    margin: 0 5px;
+    padding: 5px 0;
+    border: 1px solid #34B1AE;
+    border-radius: 5px;
+    background-color: #F5FFFF;
+}
+.menu-right li {
+    font-weight: 600;
+    font-size: 12px;
+}
+.menu-right li a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 18px;
+    color: #34B1AE;
+    text-decoration: none;
+}
+.menu-right img {
+    width: 14px;
+    padding: 0 5px;
+}
+.boder-right {
+    border-right: 1px solid #34B1AE;
+}
+.setting {
+    border-radius: 5px;
+    background-color: #707070;
+    font-size: 8px;
+    text-align: center;
+}
+.setting img{
+    display: block;
+    width: 17.5px;
+    margin: 2px auto;
+}
+.setting a {
+    display: block;
+    padding: 2px 5px;
+    color: #fff;
+    text-decoration: none;
+}
+/* /main manu right */
+/* main table */
+table {
+    margin: 7px;
+    width: 99.6%;
+    text-align: center;
+}
+table th {
+    padding: 5px 15px;
+    background-color: #E3E3E3;
+    font-weight: 100;
+    font-size: 11px;
+}
+.space {
+    background-color: rgb(0,0,0,0);
+}
+.items-center {
+    display:table-cell;
+    vertical-align: middle;
+}
+.items-center img {
+    margin: 3px 3px 0 3px;
+}
+.specification01 {
+    width: 60px;
+}
+.specification02 {
+    width: 30px;
+}
+table td {
+    padding: 5px 0;
+    background-color: #fff;
+    font-size: 11px;
+}
+table td botton {
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: #34B1AE;
+    color: #fff;
+}
+/* /main table */
+/* /menu */
